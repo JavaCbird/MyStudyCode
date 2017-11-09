@@ -1,0 +1,16 @@
+package base.demo;
+import java.sql.Connection;
+public class GetConn {
+	private Connection conn = null;
+	public GetConn() {
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+	public Connection getConn() {
+		return this.conn;
+	}
+}

@@ -1,0 +1,24 @@
+package com.IO_Demo;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Properties;
+
+/*
+ * 功能:判断是否存在"李四"这个键,若存在,将其值修改为40
+ */
+public class Properties_Demo2 {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		Properties prop=new Properties();
+		File file=new File("f:/java练习文件/IO_Demo/Properties.txt");
+		//先将文件中的数据读到集合
+		Reader r=new FileReader(file);
+		prop.load(r);
+		System.out.println(prop);
+	}
+
+}

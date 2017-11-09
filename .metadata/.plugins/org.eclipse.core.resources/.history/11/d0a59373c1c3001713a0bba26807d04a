@@ -1,0 +1,46 @@
+package book.demo;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+/*
+ * 模糊查询
+ */
+public class Train {
+	static Connection con;
+	static Statement sql;
+	static ResultSet res;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Conn c=new Conn();
+		con=c.getConnection();
+		try {
+			sql=con.createStatement();
+			res=sql.executeQuery("select * from dept where d_location like 'Sh%'");
+			while(res.next()) {
+				String no=res.getString("d_no");
+				String name=res.getString("d_name");
+				String loc=res.getString("d_location");
+				System.out.print("编号:"+no);
+				System.out.print("名字:"+name);
+				System.out.println("地址:"+loc);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			c.close();
+			try {
+				res.close();
+				sql.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

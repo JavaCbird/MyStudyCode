@@ -1,0 +1,23 @@
+package base.demo;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.List;
+import java.util.Map;
+public class DoAperation {
+	private GetConn gcon = null;
+	private Connection conn = null;
+	private PreparedStatement ps = null;
+	public DoAperation() {
+		gcon = new GetConn();
+		conn = gcon.getConn();
+	}
+	public void close() {
+		gcon.close();
+	}
+	public List<Map<String, String>> selectById(int id) {
+		String sql = "select * from dept where d_no = ?";
+		ps = conn.prepareStatement(sql);
+		ps.setInt(1, id);
+		
+	}
+}

@@ -1,0 +1,17 @@
+package base.demo;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+public class DoAperation {
+	private GetConn gcon = null;
+	private Connection conn = null;
+	public DoAperation() {
+		gcon = new GetConn();
+		conn = gcon.getConn();
+	}
+	public void close() {
+		gcon.close();
+	}
+	public selectById(int id) {
+		
+	}
+}

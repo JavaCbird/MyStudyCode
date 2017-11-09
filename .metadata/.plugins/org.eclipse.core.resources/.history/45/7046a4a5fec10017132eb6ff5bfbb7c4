@@ -1,0 +1,55 @@
+package com.Thread_Demo;
+
+import java.io.File;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+/*
+ * 演示定时器
+ * 功能:定时删除文件夹
+ */
+public class Timer_TimerTask_Demo {
+
+	public static void main(String[] args) throws ParseException {
+		// TODO Auto-generated method stub
+		//设置定时器
+		Timer t=new Timer();
+		//设置时间
+		String s="2017-11-05 15:54:00";
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		Date d=sdf.parse(s);
+		
+		t.schedule(new DeleteFolder(), d);
+	}
+
+}
+
+class DeleteFolder extends TimerTask{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		File srcFolder=new File("f:/java练习文件/IO_Demo/Timer");
+		deleteFolder(srcFolder);
+	}
+
+	private void deleteFolder(File srcFolder) {
+		// TODO Auto-generated method stub
+		File[] files=srcFolder.listFiles();
+		if(files!=null) {
+			for(File file:files) {
+				if(file.isDirectory()) {
+					deleteFolder(file);
+				}else {
+					System.out.println(file.delete());
+				}
+			}
+			//删除最外层文件夹
+			System.out.println(srcFolder.delete());
+		}
+	}
+	
+}

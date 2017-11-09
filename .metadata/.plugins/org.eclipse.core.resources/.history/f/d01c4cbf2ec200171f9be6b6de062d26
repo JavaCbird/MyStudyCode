@@ -1,0 +1,12 @@
+package com.Web_Demo;
+
+import java.net.Inet4Address;
+
+public class InetAddress_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Inet4Address
+	}
+
+}

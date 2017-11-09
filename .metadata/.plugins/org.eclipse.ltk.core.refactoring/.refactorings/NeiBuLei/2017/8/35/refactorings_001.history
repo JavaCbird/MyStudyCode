@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.neibulei.Exercise_P215_1&apos; to &apos;Exercise_P215_1_uncompleted&apos;&#x0D;&#x0A;- Original project: &apos;NeiBuLei&apos;&#x0D;&#x0A;- Original element: &apos;com.neibulei.Exercise_P215_1&apos;&#x0D;&#x0A;- Renamed element: &apos;com.neibulei.Exercise_P215_1_uncompleted&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Exercise_P215_1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.neibulei{Exercise_P215_1.java[Exercise_P215_1" matchStrategy="1" name="Exercise_P215_1_uncompleted" qualified="false" references="true" similarDeclarations="false" stamp="1503884046404" textual="false" version="1.0"/>
+</session>

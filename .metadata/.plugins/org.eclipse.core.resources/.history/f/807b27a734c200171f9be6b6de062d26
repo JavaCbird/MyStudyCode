@@ -1,0 +1,10 @@
+package com.Web_Demo;
+
+public class Send_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.Web_Demo;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+import java.net.UnknownHostException;
+
+/*
+ * 发送端
+ */
+public class Send_Demo {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		//创建发送端Socket对象
+		DatagramSocket ds=new DatagramSocket();
+		
+		//创建数据,并把数据打包
+		//创建数据
+		byte[] bys="hello,UDP,我来了".getBytes();
+		//长度
+		int length=bys.length;
+		//ip地址对象
+		InetAddress address=InetAddress.getByName("zzc");
+		//端口
+		int port=10086;
+		DatagramPacket dp=new DatagramPacket(bys, length, address, port);
+		
+		//调用Scoket对象的发送方法发送数据包
+		ds.send(dp);
+		
+		//释放资源
+		ds.close();
+	}
+
+}

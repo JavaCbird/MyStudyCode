@@ -1,0 +1,16 @@
+package book.demo;
+
+import java.sql.Connection;
+
+/*
+ * ‘§¥¶¿Ì”Ôæ‰
+ */
+public class Prep {
+	static Connection con;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

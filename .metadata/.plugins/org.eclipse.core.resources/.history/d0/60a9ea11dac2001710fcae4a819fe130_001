@@ -1,0 +1,19 @@
+package base.demo;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+public class DoAperation {
+	private GetConn gcon = null;
+	private Connection conn = null;
+	private PreparedStatement ps = null;
+	public DoAperation() {
+		gcon = new GetConn();
+		conn = gcon.getConn();
+	}
+	public void close() {
+		gcon.close();
+	}
+	public selectById(int id) {
+		String sql = "select * from dept where d_no = ?";
+		
+	}
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="bos" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="bw"/>
+			<item value="br"/>
+			<item value="o1"/>
+			<item value="s"/>
+			<item value="ArrayList&lt;String&gt;"/>
+			<item value="bj"/>
+			<item value="Student"/>
+			<item value="jy_al"/>
+			<item value="jc_al"/>
+			<item value="jc_s1"/>
+			<item value="jc"/>
+			<item value="lhm"/>
+			<item value=".start"/>
+		</list>
+		<list key="replacehistory">
+			<item value="bos"/>
+			<item value="bis"/>
+			<item value="o2"/>
+			<item value="name"/>
+			<item value="TreeSet&lt;Integer&gt;"/>
+			<item value="gz"/>
+			<item value="NewStudent"/>
+			<item value="sh"/>
+			<item value="bj_jy_al"/>
+			<item value="bj_jc_al"/>
+			<item value="bj_jc_s1"/>
+			<item value="jy"/>
+			<item value="tm"/>
+			<item value="Student2"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="356" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="190" key="DIALOG_X_ORIGIN"/>
+		<item value="226" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

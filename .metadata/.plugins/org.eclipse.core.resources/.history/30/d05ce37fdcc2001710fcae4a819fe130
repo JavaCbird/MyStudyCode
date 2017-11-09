@@ -1,0 +1,13 @@
+package base.demo;
+import java.util.List;
+import java.util.Map;
+public class Main {
+
+	public static void main(String[] args) {
+		DoAperation d = new DoAperation();
+		List<Map<String,String>> res = d.selectThanId(20);
+		d.close();
+		
+	}
+
+}

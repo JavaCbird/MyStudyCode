@@ -1,0 +1,22 @@
+package com.Web_Demo;
+
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class InetAddress_Demo {
+
+	public static void main(String[] args) throws UnknownHostException {
+		// TODO Auto-generated method stub
+		// 方法一:通过主机名得到ip地址对象
+//		 InetAddress address=Inet4Address.getByName("zzc");
+		// 方法二:通过ip地址得到ip地址对象
+		InetAddress address = Inet4Address.getByName("10.171.87.222");
+		// 得到主机名
+		String name = address.getHostName();
+		// 得到ip地址
+		String ip = address.getHostAddress();
+		System.out.println(name + "---" + ip);
+	}
+
+}

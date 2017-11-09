@@ -1,0 +1,14 @@
+:type="menu:DirectToolItem" xmi:id="_70-da8SHEee3Ac8GHUhRfg" elementId="forwardHistory">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_70-dbMSHEee3Ac8GHUhRfg" elementId="pin.group">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_70-dbcSHEee3Ac8GHUhRfg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_70-oWcSHEee3Ac8GHUhRfg"/>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_70-dbsSHEee3Ac8GHUhRfg" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_70-db8SHEee3Ac8GHUhRfg" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation">
+          <tags>Opaque</tags>
+        </children>
+        <chi
